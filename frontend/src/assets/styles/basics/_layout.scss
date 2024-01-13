@@ -1,6 +1,6 @@
 .main-layout {
     display: grid;
-    grid-template-columns: minmax(150px, auto) 1fr minmax(150px, auto);
+    grid-template-columns: minmax(250px, auto) 1fr minmax(250px, auto);
     background-color: $clr1;
     > * {
         grid-column: 2;
