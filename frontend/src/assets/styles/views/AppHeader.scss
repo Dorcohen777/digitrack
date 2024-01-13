@@ -1,0 +1,18 @@
+.app-nav-container{
+    background-color: $clr3;
+    .site-logo{
+        color: $clr4;
+        margin-inline-start: 1rem;
+    }
+    
+    .nav-list{
+        list-style-type: none;
+        padding-left: 1rem;
+        li{
+            >*{
+                margin-inline-start: 1.2rem;
+                color: $clr4;
+            }
+        }
+    }
+}
