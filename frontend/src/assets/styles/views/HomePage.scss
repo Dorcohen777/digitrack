@@ -3,15 +3,15 @@
     .hero-img {
         width: rem(700px);
         position: relative;
-        z-index: 1;
+        .hero-img-background {
 
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            top: 50%;
-            z-index: -1;
-            box-shadow: 260px 10px 120px 300px black;
+            &::before {
+                content: '';
+                display: block;
+                background-color: black;
+                width: 105px;
+                height: 105px;
+            }
         }
     }
 
@@ -40,10 +40,11 @@
         &::before {
             content: '';
             position: absolute;
-            bottom: 0;
             top: 50%;
+            left: 30%;
             z-index: -1;
-            box-shadow: 260px 10px 120px 300px rgba(185, 241, 204, 0.36);
+            box-shadow: 10px 10px 130px 320px rgba(185, 241, 204, 0.532);
+            transform: rotate(90deg);
         }
     }
 }

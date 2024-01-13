@@ -12,9 +12,12 @@ export function HomePage() {
                 <div className='hero-text-container'>
                     <h2 className='hero-title'>Track Smart, Market Sharp!</h2>
                     <h1>DigiTrack</h1>
-                    <p>Effortlessly track, budget, and optimize marketing expenses. <br/>Maximize ROI with ease!</p>
+                    <p>Effortlessly track, budget, and optimize marketing expenses. <br />Maximize ROI with ease!</p>
                 </div>
-                <img src={heroImg} className='hero-img' />
+                <div>
+                    <img src={heroImg} className='hero-img' />
+                    
+                </div>
             </div>
 
         </section>
