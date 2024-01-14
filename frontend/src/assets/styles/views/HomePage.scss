@@ -1,50 +1,52 @@
-.hero-inner-container {
+.hero-main-container {
+    height: calc(100vh - 50px);
 
-    .hero-img {
-        width: rem(700px);
-        position: relative;
-        .hero-img-background {
+    .hero-inner-container {
+
+        .hero-img {
+            position: relative;
+
+            .hero-img-background {
+
+                &::before {
+                    content: '';
+                    display: block;
+                    background-color: black;
+                    width: 105px;
+                    height: 105px;
+                }
+            }
+        }
+
+        .hero-text-container {
+            max-width: 700px;
+            color: $clr5;
+            position: relative;
+            z-index: 1;
+
+            >h2,
+            h1,
+            p {
+                padding: 0.8rem 0.8rem 0.8rem 0;
+            }
+
+            button {
+                background-color: $btnColor;
+
+                &:hover {
+                    background-color: darken($color: $btnColor, $amount: 5);
+                }
+            }
 
             &::before {
                 content: '';
-                display: block;
-                background-color: black;
-                width: 105px;
-                height: 105px;
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                z-index: -1;
+                box-shadow: 10px 10px 130px 320px rgba(185, 241, 204, 0.532);
+                transform: rotate(90deg);
             }
-        }
-    }
-
-    .hero-text-container {
-        max-width: 700px;
-        color: $clr5;
-        position: relative;
-        z-index: 1;
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        h1 {
-            font-size: 4rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
-
-        >* {
-            padding: 0.8rem;
-        }
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            z-index: -1;
-            box-shadow: 10px 10px 130px 320px rgba(185, 241, 204, 0.532);
-            transform: rotate(90deg);
         }
     }
 }
