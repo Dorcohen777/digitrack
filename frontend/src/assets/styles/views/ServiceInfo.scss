@@ -1,0 +1,13 @@
+.service-info-container {
+    justify-content: space-between;
+
+    .service-text-container {
+        max-width: rem(700px);
+    }
+
+    .service-info-img-container {
+        .service-info-img {
+            max-width: 600px;
+        }
+    }
+}
