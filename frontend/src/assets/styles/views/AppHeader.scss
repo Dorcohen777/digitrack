@@ -1,15 +1,17 @@
-.app-nav-container{
-
+.app-nav-container {
     background-color: $clr3;
-    .site-logo{
+    position: relative;
+    z-index: 2;
+    .site-logo {
         color: $clr4;
     }
-    
-    .nav-list{
+
+    .nav-list {
         list-style-type: none;
         padding-left: 1rem;
-        li{
-            >*{
+
+        li {
+            >* {
                 margin-inline-start: 1.2rem;
                 color: $clr4;
             }

@@ -1,11 +1,9 @@
 .hero-main-container {
     height: calc(100vh - 50px);
-
     .hero-inner-container {
 
         .hero-img {
             position: relative;
-
             .hero-img-background {
 
                 &::before {
